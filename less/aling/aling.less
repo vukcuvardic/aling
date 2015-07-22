@@ -1,0 +1,369 @@
+//
+// All pages elements
+//
+
+// Shadows
+
+.navbar, .panel, .breadcrumb, .pagination, .carousel {
+    .box-shadow(@shadow: 0 1px 2px 1px rgba(0,0,0,0.3));
+}
+
+
+
+// Back to top
+
+#back-to-top{
+    position:fixed;
+    bottom:100px;
+    right:60px;
+    z-index: 999;
+}
+
+#back-to-top a{
+    text-align:center;
+    text-decoration:none;
+    color:#d1d1d1;
+    display:block;
+    -moz-transition:color 1s; 
+    -webkit-transition:color 1s;
+    -o-transition:color 1s;
+    width: 60px;
+}
+
+#back-to-top a:hover{
+    color:#979797;
+}
+
+#back-to-top a span{
+    background:#d1d1d1;
+    border-radius:6px;
+    display:block;
+    height:60px;
+    width:58px;
+    background:#d1d1d1 url(../images/arrow-up.png) no-repeat center center;
+    margin-bottom: 5px;
+    -moz-transition: background 1s;
+    -webkit-transition: background 1s;
+    -o-transition: background 1s;
+    margin-right: 0;
+}
+
+#back-to-top a:hover span{
+    background:#979797 url(../images/arrow-up.png) no-repeat center center;
+}
+
+// Tables
+
+table {
+    .table;
+    .table-striped;
+    .table-hover;
+    margin: @line-height 0;
+}
+
+.table-responsive {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+td {
+    width:50%;
+}
+
+@table-bg-hover: white;
+
+// Forms
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus, textarea[name="client_message"]:focus, button:focus {   
+    border-color: rgba(0, 64, 128, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(0, 64, 128, 0.6);
+    outline: 0 none;}
+
+.form-control {
+    font-size: 1em;
+}
+
+// Content
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+}
+
+@media (min-width:@screen-md-min) and (max-width:@screen-md-max) {
+    .content {
+        margin-top: 120px !important;
+    }
+	.home .content {margin-top: 0 !important}
+}
+
+.content {
+    margin-top: 60px;
+	margin-bottom: @line-height*2;
+    padding-top: @line-height*3;
+}
+
+// Breadcrumbs
+
+.breadcrumb {
+    margin: @line-height 0;
+    background-color:@brand-primary;
+    color:white;
+    font-size: 1em;
+}
+
+.breadcrumb h3 {
+    font-size: 1em;
+    padding:0;
+    margin:0;
+}
+
+.breadcrumb li {
+    color:@gray-light;
+}
+
+.breadcrumb li > a {
+    color:@gray-lighter;
+}
+
+.breadcrumb .dropdown-menu li a {
+    color:@gray-darker;
+}
+
+// Thumbs
+
+.thumbnails-container {
+    .section();
+    margin-bottom:@line-height*2;
+}
+
+.thumbnails-container > .row > div {
+    .make-xs-column(6);
+    .make-sm-column(4);
+    .make-md-column(3);
+}
+
+@media (max-width: 400px) {
+    .thumbnails-container > .row > div {
+        width: 100%;
+        clear: both;
+    }
+}
+
+.thumb a h4 {
+    height:2em;
+    font-size: 1em;
+}
+
+.thumb {
+    border: solid 1px @gray-lighter;
+    padding: @line-height;
+    border-radius: @border-radius-base;
+    text-align: center;
+    margin-bottom: @line-height;
+}
+
+@media (max-width: @screen-sm-max) {
+    .thumb {
+        .center-block;
+        margin-bottom: @line-height;
+    }
+}
+
+.thumb-opacity {
+    opacity: 0.6;
+}
+
+.thumb-hover {
+    color:white;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    opacity: 1;
+}
+
+.thumb h4 {
+    text-align: center;
+    margin-top:0;
+    font-weight:bold;
+}
+
+.thumb p {
+    margin-top: @line-height;
+    padding-left:0;
+}
+
+.thumb:hover {
+    background-color: @brand-primary;
+    color: white;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.thumb:hover a {
+    color: white;
+}
+
+.thumb a:hover {
+    text-decoration: none;
+}
+
+.tiles > div {
+    margin-bottom:@line-height;
+}
+
+// Section
+
+.section {
+    margin-bottom: @line-height*4;
+}
+
+// Modal 
+
+.modal-title {
+    font-size:@line-height*2;
+}
+
+.modal-header {
+    padding: 20px; 
+}
+
+.modal-body p:last-child {
+    margin-bottom:@line-height;
+}
+
+// Panel
+
+.panel {
+    margin-bottom: @line-height*1.5;
+}
+
+@panel-bg: @gray-lighter;
+.panel{
+    padding:15px;
+}
+
+.panel p:last-child {
+    margin-bottom: 0;
+}
+
+.panel > .row > div {
+    .make-sm-column(12);
+}
+
+// Tables
+@-moz-document url-prefix() {
+    fieldset { display: table-cell; }
+} 
+
+// Pagination
+
+.pagination-container {
+    text-align: center;
+    width: 100%;
+}
+
+.pager {
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: center;
+    list-style: none;
+}
+
+.pager .next>a, .pager .next>span {
+    float: right;
+}
+
+.pager .previous>a, .pager .previous>span {
+    float: left;
+}
+
+.pager li>a, .pager li>span {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+// Buttons
+
+.btn {
+    font-size: 1em;
+    margin-top: @line-height/2;
+}
+
+.btn-primary {
+    background-color: @brand-primary;
+}
+
+.button-group {
+    .row;
+}
+
+.btn-default {
+    background-color:@table-bg-accent;
+    transition: all .2s ease-in-out;
+}
+
+.btn-default:hover {
+    background-color:@table-bg-accent;
+    border:1px solid @brand-primary;
+}
+
+.button-group > div {
+    .make-xs-column(4);
+}
+
+button a {
+    font-size:90%;
+}
+
+button a:hover {
+    text-decoration:none;
+}
+
+button:active, a.btn:active {
+    border-color: rgba(0, 64, 128, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(0, 64, 128, 0.6);
+    outline: 0 none;
+}
+
+@media (max-width: @screen-xs-max) {
+    .button-group > div {
+        width: 50%;
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+    .button-group {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+    .button-group {
+        text-align: left;
+    }
+    button {
+        margin-top: @line-height;
+    }
+}
+
+.pager li>a:hover, .pager li>a:active , .pager li>a:focus  {text-decoration: none}
+
+.pager li>a:hover {border: 1px solid #004080}
+
+.pager li>a:active {
+	border-color: rgba(0, 64, 128, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(0, 64, 128, 0.6);
+    outline: 0 none;	
+	transition: all .2s ease-in-out;
+}
+
+.pager li>a, .pager li>span {border-radius: 3px}

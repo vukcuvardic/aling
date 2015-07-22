@@ -1,0 +1,92 @@
+// Slideshow
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-control {
+    z-index: 100;
+}
+
+.carousel-inner>.item {
+    .transition(1s);
+}
+
+.carousel-caption p {
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.carousel-indicators {
+    bottom: -(@line-height*2.2);
+    z-index: 100;
+    margin-bottom: 0;
+}
+
+.carousel-indicators li {
+    border: 1px solid @gray-light;
+}
+
+.carousel-indicators .active {
+    background-color: @brand-primary;
+}
+
+#slideshow {
+    .carousel();
+    margin-bottom: @line-height*3;
+    margin-top: 60px;
+}
+
+.slideshow-other {
+    margin-top:0!important;
+}
+
+.carousel-caption p:last-child {
+    margin: 0;
+}
+
+.carousel-caption h2 {
+    margin-top: 0;
+}
+
+.slideshow .carousel-caption {
+    bottom:20px;
+    height: auto;
+    background-color: transparent;
+}
+
+.slideshow-other .carousel-control {
+    width: 10%;
+}
+
+@media (max-width: @screen-sm-max) {
+    .slideshow-other .carousel-control {
+        width: 5%;
+    }
+}
+
+@media (max-width: 400px) {
+    #slideshow{
+        display: none;
+    }
+}

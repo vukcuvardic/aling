@@ -1,0 +1,66 @@
+//
+// About pages
+// --------------------------------------------------
+
+.about-text, #news-page {
+    text-align: justify;
+    font-size:@long-body;
+    line-height:@long-line-height;
+}
+
+@media (max-width:@screen-xs-max) {
+    .about-text, #news-page {
+        text-align: left;
+    }
+}
+
+.about .col-sm-6 {
+    padding-right: @line-height * 2;
+}
+
+.about .row > .col-sm-6:nth-child(2) {
+    padding-left: @line-height * 2;
+}
+
+.about h2 {color: @brand-primary}
+
+.about .row .col-sm-6 h2 {
+    color: @brand-primary;
+    margin-bottom: @line-height / 2;
+}
+
+@media (max-width:@screen-xs-max) {
+    .about .col-sm-6 {
+        padding-right: 15px;
+    }
+
+    .about .row > .col-sm-6:nth-child(2) {
+        padding-left: 15px;
+    }
+
+    .about .row .col-sm-6 h2 {
+        margin-top:@line-height*2;
+    }
+}
+
+.about .panel {
+    font-style: italic;
+    font-size: 1em;
+}
+
+.timeline ul, .references ul {
+    line-height: @line-height*1.5;
+	padding-left: 0;
+}
+
+.timeline li {
+	list-style-position: inside;
+	text-indent: -3.5em;
+	list-style: none;
+	strong {margin-right: 0.9em}
+}
+
+.timeline li, .references li {
+    margin-bottom: @line-height / 2;
+	font-size: 0.9em;
+}

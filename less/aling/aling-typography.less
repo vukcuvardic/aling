@@ -1,0 +1,92 @@
+//
+// Typography
+//
+
+h1 {
+    color: @brand-primary;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin-bottom: @line-height;
+    margin-bottom: 0;
+}
+
+h1:first-of-type {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-top: @line-height;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1em;
+    margin: @line-height/2 0;
+}
+
+ul {
+    margin-bottom: @line-height/2;
+    padding-left: 1.5em;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: @screen-sm-max) {
+    body {
+        font-size:96%;
+    }
+}
+
+@line-height: 1em;
+@long-body: 1.1em;
+@long-line-height:@line-height * 2;
+
+.two-column {
+    moz-column-count: 2;
+    -moz-column-gap: @line-height * 4;
+    -webkit-column-count: 2;
+    -webkit-column-gap : @line-height * 4;
+    -moz-column-rule-color:  @gray-dark;
+    -moz-column-rule-style:  solid;
+    -moz-column-rule-width:  1px;
+    -webkit-column-rule-color:  @gray-lighter;
+    -webkit-column-rule-style: solid ;
+    -webkit-column-rule-width:  1px;
+    column-fill: balance;
+    widows: 3;
+}
+
+@media (max-width:@screen-sm-max) {
+    .two-column {
+        moz-column-count: 1;
+        -moz-column-gap: 0;
+        -webkit-column-count: 1;
+        -webkit-column-gap : 0;
+        -moz-column-rule-color:  @gray-dark;
+        -moz-column-rule-style:  solid;
+        -moz-column-rule-width:  0px;
+        -webkit-column-rule-color:  @gray-lighter;
+        -webkit-column-rule-style: solid ;
+        -webkit-column-rule-width:  0px;
+        margin:0;
+        column-fill: balance;
+        widows: 3;
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+    #footer h4 {
+        font-size:0.8em;
+    }
+}
