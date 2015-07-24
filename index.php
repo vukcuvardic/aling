@@ -39,8 +39,8 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
     </div>
-	<div class="content">
-	<!-- Top Proizvodi -->
+    <div class="content">
+        <!-- Top Proizvodi -->
         <div class="top-products">
             <h3>Serije proizvoda</h3>
             <div class="thumbnails-container">
@@ -96,16 +96,16 @@
                 </div>
             </div>
         </div>
-    
+
         <!-- News -->
         <h3>Novosti</h3>
         <div class="news">
             <div class="news-thumbnail">
                 <a href="#">
-					<img class="img-responsive" src="dist\images\news\Image_1.png" alt="...">
+                    <img class="img-responsive" src="dist\images\news\Image_1.png" alt="...">
                 </a>
-				 <a href="#"><h4>Aling-Conel izvoznik godine</h4></a>
-				 <p class="date">Decembar 2010.</p>
+                <a href="#"><h4>Aling-Conel izvoznik godine</h4></a>
+                <p class="date">Decembar 2010.</p>
                 <p>Prestižna nagrada „Izvoznik godine“ za najbolji izvozni proizvod za 2010-tu godinu dodeljena je kompaniji Aling-Conel d.o.o. iz Gajdobre.</p>
                 <a href="#" class="btn btn-default">Detaljnije</a>
             </div>
@@ -114,7 +114,7 @@
                     <img class="img-responsive" src="http://placehold.it/360X180" alt="...">
                 </a>
                 <a href="#"><h4>Ovo je naslov druge vesti</h4></a>
-				<p class="date">Datum</p>
+                <p class="date">Datum</p>
                 <p>Kratki opis vesti u vidu 1-2 rečenice</p>
                 <a href="#" class="btn btn-default">Detaljnije</a>
             </div>
@@ -123,12 +123,12 @@
                     <img class="img-responsive" src="http://placehold.it/360X180" alt="...">
                 </a>
                 <a href="#"><h4>Ovo je naslov treće vesti</h4></a>
-				<p class="date">Datum</p>
+                <p class="date">Datum</p>
                 <p>Kratki opis vesti u vidu 1-2 rečenice</p>
                 <a href="#" class="btn btn-default">Detaljnije</a>
             </div>
         </div>
-	</div>
     </div>
+</div>
 
 <?php include 'footer.php'; ?>

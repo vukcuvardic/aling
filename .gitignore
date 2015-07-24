@@ -1,3 +1,4 @@
 /dist/css/*
 /docs/*
 /node_modules/*
+/nbproject/*

@@ -57,7 +57,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            
+
                             <div class="product-colors">
                                 <div>
                                     <strong>Materijal</strong>
@@ -68,7 +68,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            
+
                             <div class="product-colors">
                                 <div>
                                     <strong>Maska</strong>
@@ -284,7 +284,7 @@
                     <div class="clearfix"></div>
                     <h5>Materijal</h5>
                     <div class="product-colors">
-                           <div class="selected">
+                        <div class="selected">
                             <a href="#">
                                 <img src="dist/images/colors/bela.png" width="20" height="20" alt="bela" />
                                 <span>Plastika</span>
@@ -292,7 +292,7 @@
                         </div>     
                     </div>
                     <div class="product-colors">
-                           <div>
+                        <div>
                             <a href="#">
                                 <img src="dist/images/colors/mahagoni.png" width="20" height="20" alt="bela" />
                                 <span>Drvo</span>
@@ -300,7 +300,7 @@
                         </div>     
                     </div>
                     <div class="product-colors">
-                           <div>
+                        <div>
                             <a href="#">
                                 <img src="dist/images/colors/metalik-plava.png" width="20" height="20" alt="bela" />
                                 <span>Metal</span>

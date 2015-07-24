@@ -28,8 +28,8 @@
                 <div class='lightbox-dialog'>
                     <div class='lightbox-content'>
                         <div class="modal-header">
-                            <button type="button" class="close" style="" onclick="$(&quot;#singleProductLightbox&quot;).lightbox(&quot;hide&quot;)">×</button>
-			</div>
+                            <button type="button" class="close" style="" onclick="$( & quot; #singleProductLightbox & quot; ).lightbox( & quot; hide & quot; )">×</button>
+                        </div>
                         <img class="img-responsive" src="dist/images/products/mode/art_651_0_p01.png" alt="..." />
                         <div class='lightbox-caption'>
                             <span>art.651.0 beli blok</span><p><strong>Priključnica dvopolna 16A/250V~ sa plastičnim jezgrom</strong></p>

@@ -12,27 +12,27 @@
 
 .news-thumbnail {
     .make-xs-column(12);
-	.make-sm-column(6);
-	.make-md-column(4);
+    .make-sm-column(6);
+    .make-md-column(4);
     margin-bottom: @line-height*2;
-	h4 {margin-bottom: 0}
-	p:first-of-type {margin-top: @line-height}
+    h4 {margin-bottom: 0}
+    p:first-of-type {margin-top: @line-height}
 }
 
 .news-page img {
-	margin-bottom: @line-height;
+    margin-bottom: @line-height;
 }
 
 .news-page>.news-thumbnail {
     .make-sm-column(12);
-   .make-md-column(8);
+    .make-md-column(8);
     padding-left: 0;
 }
 
 .date {
-	font-size: 80%;
-	font-style: italic;
-	margin-top: 0;
+    font-size: 80%;
+    font-style: italic;
+    margin-top: 0;
 }
 
 .news-other {
@@ -70,38 +70,38 @@
 }
 
 @media (max-width: @screen-xs-max) { 
-	.news-thumbnail {margin-bottom: 0 !important}
-	.news-thumbnail:nth-child(2) {display: none}
+    .news-thumbnail {margin-bottom: 0 !important}
+    .news-thumbnail:nth-child(2) {display: none}
 }
 
 @media (max-width: @screen-sm-max) {
     .news-thumbnail {margin-bottom: @line-height*3}
-	
-	.news-thumbnail:nth-child(3) {display: none}
-	
-	.news-other {
-		clear: both;
-		margin-top: @line-height*2;
-	}
-	
-	.news-page>.news-thumbnail {
-		padding-left: 0;
-		padding-right: 0;
-		margin-bottom: @line-height * 2! important;
-	}
+
+    .news-thumbnail:nth-child(3) {display: none}
+
+    .news-other {
+        clear: both;
+        margin-top: @line-height*2;
+    }
+
+    .news-page>.news-thumbnail {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: @line-height * 2! important;
+    }
 }
 
 @media (min-width: @screen-md-min) {
-	.news-page {
-		display: table;
-		table-layout: fixed;
-		height: 100%;
-		width: 100%;
-	 }
-	 
-	 .news-thumbnail, 	.news-other {
-		display: table-cell;
-		height: 100%;
-		vertical-align: top;
-	 }
+    .news-page {
+        display: table;
+        table-layout: fixed;
+        height: 100%;
+        width: 100%;
+    }
+
+    .news-thumbnail, 	.news-other {
+        display: table-cell;
+        height: 100%;
+        vertical-align: top;
+    }
 }
