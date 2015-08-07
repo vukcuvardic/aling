@@ -94,15 +94,7 @@
                             </ul>
                         </li>
                         <li><a href="news.php">Novosti</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Download <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="catalogues.php">Katalog</a></li>
-                                <li><a href="#">Flajeri</a></li>
-                                <li><a href="#">Sertifikati</a></li>
-                                <li><a href="#">Uputstva</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="download.php">Download</a></li>
                         <li><a href="contact.php">Kontakt</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right hidden-sm hidden-md">
